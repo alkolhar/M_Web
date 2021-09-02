@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle</title>
+</head>
+
+<style>
+    table,
+    th,
+    td {
+        width: 50%;
+        border-style: solid;
+        border-collapse: collapse;
+        text-align: center;
+        caption-side: bottom;
+        padding: 15px;
+    }
+
+    .secondHeader {
+        text-align: left;
+        vertical-align: top;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>
+            Essverhalten
+        </caption>
+        <thead>
+            <tr>
+                <td rowspan="2" colspan="2"></td>
+                <td colspan="2"><b>Präferenzen</b></td>
+            </tr>
+            <tr>
+                <td class="secondHeader"><b>Fleisch</b></td>
+                <td class="secondHeader"><b>Vegetarisch</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="secondHeader"><b>Geschlecht</b></td>
+                <td><b>m</b></td>
+                <td>73%</td>
+                <td>27%</td>
+            </tr>
+            <tr>
+                <td><b>w</b></td>
+                <td>16%</td>
+                <td>84%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        Wie bearbeitet man die Breite der einzelnen Spalten?
+    </p>
+</body>
+
+</html>
