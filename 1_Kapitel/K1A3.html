@@ -1,0 +1,126 @@
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentenstruktur</title>
+</head>
+
+<body>
+    <h1>Inhaltsverzeichnis</h1>
+    <p>Für Aufgabe 5 wird ein Inhaltsverzeichnis erstellt. </p>
+    <ul style="list-style-type: decimal;">
+        <li>Überschrift h1</li>
+        <ol style="list-style-type: upper-latin;">
+            <li>Überschrift h2</li>
+            <li>Überschrift h2</li>
+            <ol style="list-style-type: lower-roman;">
+                <li>Überschrift h3</li>
+                <li>Überschrift h3</li>
+            </ol>
+            <li>Überschrift h2</li>
+        </ol>
+        <li>Überschrift h1</li>
+        <ol style="list-style-type: upper-latin;">
+            <li>Überschrift h2</li>
+            <ol style="list-style-type: lower-roman;">
+                <li>Überschrift h3</li>
+                <ol style="list-style-type: decimal;" start="2111">
+                    <li>Überschrift h4</li>
+                    <li>Überschrift h4</li>
+                </ol>
+            </ol>
+        </ol>
+        <li>Überschrift h1</li>
+    </ul>
+    <h1>1 Überschrift h1</h1>
+    <p><a href="/1_Kapitel/K1A1.html">Hier springen Sie in das "Hello World" Dokument</a></p>
+    <p>Schreiben Sie eine Seite "Dokumentenstruktur" und benutzen Sie die Tags h1, h2, h3, h4 und p.</p>
+    <p>
+        <a href="#Kap3">Hier springen Sie in Kapitel drei!</a>
+    </p>
+    <h2>1.1 Überschrift h2</h2>
+    <p>Entwerfen Sie damit ein strukturiertes Dokument mit den Überschriften.</p>
+    <h2 id="Kap1-2">1.2 Überschrift h2</h2>
+    <p>
+        &lt;h[1-6]&gt; leitet eine Überschrift ein. Die Zahl steht für die Überschriftenebene. 1 ist die höchste Ebene,
+        6 die niedrigste. Dahinter folgt der Text der Überschrift, im Beispiel eingeleitet durch eine
+        Kapitel-Nummerierung, wie man sie aus Fachbüchern kennt. &lt;h[1-6]&gt; beendet die Überschrift und steht am
+        Ende des Überschriftentextes.
+    </p>
+    <h3 id="Kap1-2-1">1.2.1 Überschrift h3</h3>
+    <p>
+        Beachten Sie: Die Zahlen im einleitenden und abschließenden Tag müssen gleich sein.
+        Überschriften sind Blockelemente. Deshalb sind vor und nach Überschriften keine Absatzschaltungen (br) nötig.
+    </p>
+    <h3>1.2.2 Überschrift h3</h3>
+    <p>
+        Empfehlung: Sie sollten auf einer Seite maximal eine Überschrift der ersten Ebene einsetzen und dann den
+        Abschnitten entsprechend ihrer Hierarchie eine Überschrift tieferer Ebene verpassen. Typischerweise reichen in
+        einem Dokument Überschriften erster und zweiter Ordnung (h1 und h2) Sie bilden dort den Titel des Dokuments (h1)
+        und eventuell nötige Zwischenüberschriften (h2) ab. HTML soll aber auch anderes als die „Allerweltswebsite“
+        können, zum Beispiel auch technische Dokumentationen oder wissenschaftliche Abhandlungen. Dort sind auch tiefere
+        Schachtelungen des Inhalts üblich, die nur mit mehr als nur zwei Überschriftenebenen abzubilden sind. HTML hält
+        dafür sechs Ebenen – eben h1 bis h6 – vor, bei Microsoft Word beispielsweise gibt es 9 Gliederungsebenen.
+    </p>
+    <h2>1.3 Überschrift h2</h2>
+    <h1>2 Überschrift h1</h1>
+    <p>
+        Damit beim Springen auch wirklich gesprungen und somit auch gescrollt werden muss, wird hier ein Fülltext
+        eingefügt.
+    </p>
+    <h2>2.1 Überschrift h2</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+        dolor sit amet.
+    </p>
+    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+        luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </p>
+    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+        possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis.
+    </p>
+    <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+        ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos
+        erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus
+        sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+    </p>
+    <h3>2.1.1 Überschrift h3</h3>
+    <p>
+        <a href="#Kap1-2">Hier springen Sie in Kapitel 1.2</a>
+    </p>
+    <h4>2.1.1.1 Überschrift h4</h4>
+    <h4>2.1.1.2 Überschrift h4</h4>
+    <h1 id="Kap3">3 Überschrift h1</h1>
+    <p>In dieses Kapitel kommen Sie direkt vom ersten Kapitel.</p>
+    <p>Innerhalb eines HTML-Dokuments können Links eingefügt werden, die einen anderen Abschnitt der gleichen Seite
+        referenzieren. Dazu muss eine Sprungmarke oder Anker definiert werden, zu dem gesprungen werden soll. Der
+        Verweis kann aber auch in einer anderen Datei stehen. Dann wird die Zieldatei geladen, und der Browser springt
+        an die entsprechende Stelle innerhalb der Datei. Dieses Sprungziel innerhalb der Seite wird mit einem Hash #
+        referenziert. Verweise auf Anker sind an jeder beliebigen Stelle des Dokuments erlaubt und mit den anderen
+        Referenzierungsarten kombinierbar.</p>
+</body>
+
+</html>
