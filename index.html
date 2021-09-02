@@ -5,54 +5,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahlmodul: Webprogrammierung</title>
+    <title>
+        Wahlmodul: Webprogrammierung
+    </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .sectionWeb {
+            height: 500px;
+            background-color: rgb(46, 46, 253);
+        }
+
+        .sectionExercise {
+            height: 500px;
+            background-color: blueviolet;
+        }
+
+        .sectionProject {
+            height: 500px;
+            background-color: teal;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .textBig {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .textSmall {
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Wahlmodul: Web-Programmierung</h1>
-    <h2 id="WebThema">Thema</h2>
-    <p>
-        Im Modul Web-Programmierung behandeln wir die wichtigsten Techniken für die Webprogrammierung. Dazu gehören die
-        Basissprachen HTML und CSS. Im Weiteren behandeln wir Scriptsprachen wie JavaScript und PHP.
-    </p>
-    <p>
-        Wir werden zuerst "client-side" Techniken kennen lernen. Das sind Techniken, die lokal in einem Browser
-        verwendet werden. In einem zweiten Teil studieren wir "server-side" Techniken. Damit lassen sich komplexe
-        Anwendungen inklusive Datenbankanbindungen prügrammieren.
-    </p>
-    <p>
-        Dieser Kurs behandelt primär die technischen Aspekte der Webprogrammierung. Fragen zur Benutzbarkeit und zur
-        Bedienbarkeit werden nicht behandelt. Ebenso gehen wir nicht auf Fragen des Software Engineerings ein, das
-        heisst wie ein grösserer Webauftritt geplant und realisiert werden soll.
-    </p>
-    <p>
-        Alles was heute unter dem Schlagwort Web 2.0 zusammengefasst wird - darunter gehören Dinge wie Tauschbörsen,
-        Blogging, Wikis und Webdienste - können wir in diesem Kurs nicht behandeln. Wir bleiben bei den grundlegenden
-        Techniken, worauf solche weiterführenden Dienste selbstverständlich beruhen.
-    </p>
-    <p>
-        Es gibt heute eine Vielzahl von sogenannten Content-Management Systemen (CMS) wie Typo3, Joomla!, Drupal, CMS
-        Made Simple usw. Webauftritte werden fast immer mit Hilfe solcher cMS erstellt. Es ist aber unabdingbar, dass
-        man trotzdem die zugrunde liegenden Techniken wie HTML oder PHP versteht. Sonst ist man bei der kleinsten
-        Schwierigkeit hilflos. Und genau um diese Grundtechniken geht es in diesem Kurs.
-    </p>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="/img/web-logo.png" alt="ost-logo">
+            </div>
+            <li><a href="#web">Web-Programmierung</a></li>
+            <li><a href="#uebungen">Übungen</a></li>
+            <li><a href="project">Projekt</a></li>
+        </ul>
 
-    <h2 id="Uebungen">Übungen</h2>
-    <p><a href="1_Kapitel/index.html">Kapitel 1</a></p>
-    <p><a href="2_Kapitel/index.html">Kapitel 2</a></p>
-    <p><a href="3_Kapitel/index.html">Kapitel 3</a></p>
-    <p><a href="4_Kapitel/index.html">Kapitel 4</a></p>
-    <p><a href="5_Kapitel/index.html">Kapitel 5</a></p>
-    <p><a href="6_Kapitel/index.html">Kapitel 6</a></p>
-    <p><a href="7_Kapitel/index.html">Kapitel 7</a></p>
-    <p><a href="8_Kapitel/index.html">Kapitel 8</a></p>
-    <p><a href="9_Kapitel/index.html">Kapitel 9</a></p>
+    </nav>
 
-    <h2 id="Projekt">Projekt</h2>
-    <p>
-        Parallel zum Selbstudienkurs wird ein Projekt bearbeitet. Dieses wird gegen Ende des Semester in einem
-        Fachgespräch analysiert und bewertet.
-    </p>
+    <section class="sectionWeb">
+        <div class="box-main">
+            <div>
+                <h2 class="textBig" id="WebThema">
+                    Thema
+                </h2>
+                <p class="textSmall">
+                    Im Modul Web-Programmierung behandeln wir die wichtigsten Techniken für die Webprogrammierung. Dazu
+                    gehören die Basissprachen HTML und CSS. Im Weiteren behandeln wir Scriptsprachen wie JavaScript und
+                    PHP. <br>
+                    Wir werden zuerst "client-side" Techniken kennen lernen. Das sind Techniken, die lokal in einem
+                    Browser verwendet werden. In einem zweiten Teil studieren wir "server-side" Techniken. Damit lassen
+                    sich
+                    komplexe Anwendungen inklusive Datenbankanbindungen prügrammieren. <br>
+                    Dieser Kurs behandelt primär die technischen Aspekte der Webprogrammierung. Fragen zur Benutzbarkeit
+                    und zur Bedienbarkeit werden nicht behandelt. Ebenso gehen wir nicht auf Fragen des Software
+                    Engineerings
+                    ein, das heisst wie ein grösserer Webauftritt geplant und realisiert werden soll. <br>
+                    Alles was heute unter dem Schlagwort Web 2.0 zusammengefasst wird - darunter gehören Dinge wie
+                    Tauschbörsen, Blogging, Wikis und Webdienste - können wir in diesem Kurs nicht behandeln. Wir
+                    bleiben bei den
+                    grundlegenden Techniken, worauf solche weiterführenden Dienste selbstverständlich beruhen. <br>
+                    Es gibt heute eine Vielzahl von sogenannten Content-Management Systemen (CMS) wie Typo3, Joomla!,
+                    Drupal, CMS Made Simple usw. Webauftritte werden fast immer mit Hilfe solcher cMS erstellt. Es ist
+                    aber
+                    unabdingbar, dass man trotzdem die zugrunde liegenden Techniken wie HTML oder PHP versteht. Sonst
+                    ist man bei der
+                    kleinsten Schwierigkeit hilflos. Und genau um diese Grundtechniken geht es in diesem Kurs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionExercise">
+        <div class="box-main">
+            <div>
+                <h2 class="textBig" id="Uebungen">
+                    Übungen
+                </h2>
+                <ol style="list-style-type: disc;" class="textSmall">
+                    <li><a href="1_Kapitel/index.html">Kapitel 1</a></li>
+                    <li><a href="2_Kapitel/index.html">Kapitel 2</a></li>
+                    <li><a href="3_Kapitel/index.html">Kapitel 3</a></li>
+                    <li><a href="4_Kapitel/index.html">Kapitel 4</a></li>
+                    <li><a href="5_Kapitel/index.html">Kapitel 5</a></li>
+                    <li><a href="6_Kapitel/index.html">Kapitel 6</a></li>
+                    <li><a href="7_Kapitel/index.html">Kapitel 7</a></li>
+                    <li><a href="8_Kapitel/index.html">Kapitel 8</a></li>
+                    <li><a href="9_Kapitel/index.html">Kapitel 9</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionProject">
+        <div class="box-main">
+            <div>
+                <h2 class="textBig" id="Projekt">
+                    Projekt
+                </h2>
+                <p class="textSmall">
+                    Parallel zum Selbstudienkurs wird ein Projekt bearbeitet. Dieses wird gegen Ende des Semester in
+                    einem Fachgespräch analysiert und bewertet.
+                </p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
