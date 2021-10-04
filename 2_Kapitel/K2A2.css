@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+}
+
+p.odd {
+    background-color: grey;
+}
+
+#blackborder {
+    border: black;
+    border-style: solid;
+}
+
+ul ul il {
+    font-size: 80%;
+    color: blue;
+}
