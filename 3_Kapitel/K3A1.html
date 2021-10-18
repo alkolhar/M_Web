@@ -61,21 +61,33 @@
         function centerIt() {
             var banner = document.getElementById('banner')
             var bannerInfo = banner.getBoundingClientRect();
-
-            console.log('Innere Breite: ' + window.innerWidth);
-            console.log('Objekt Breite: ' + bannerInfo.width);
-            console.log('Innere Höhe: ' + window.innerHeight);
-            console.log('Objekt Höhe: ' + bannerInfo.height);
-
             var newLeft = (window.innerWidth - bannerInfo.width) / 2;
             var newTop = (window.innerHeight - bannerInfo.height) / 2;
             
-            console.log('Left: ' + newLeft + " Top: " + newTop)
             banner.style.left = newLeft;
             banner.style.top = newTop; 
         }
         centerIt();
     </script>
+    <!-- Aufgabe 6 -->
+    <h2>Aufgabe 6</h2>
+    <img src="img/mouseImg.png" id="pic" onmousemove=moveIt()>
+    <script>
+        function moveIt() {
+            if (!ev) {
+                var ev = window.event;
+            }
+            var x = ev.clientX + "px";
+            var y = ev.clientY + "px"
+            var imgLoc = document.getElementById('pic');
+            imgLoc.style.top = y;
+            imgLoc.style.left = x;
+
+            console.log('x: ' + x + ', y: ' + y)
+        }
+        
+    </script>
+
 </body>
 
 </html>
