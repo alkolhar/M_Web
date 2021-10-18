@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript alert/confirm</title>
+    <script type="text/javascript">
+        function ask() {
+            if (confirm("Press Cancel to Acknowledge")) {
+                window.alert("Antwort: ok")
+            } else {
+                window.alert("Antwort: cancel")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Aufgabe 1</h2>
+    <a href="javascript:alert('Hallo!')">Alert me!</a>
+    <br>
+    <a href="javascript:ask()">Ask me!</a>
+    <!-- Aufgabe 2 -->
+    <h2>Aufgabe 2</h2>
+    <script type="text/javascript">
+        document.write("<p>Hello<span style='font-size:200%'> World </span></p>")
+    </script>
+    <!-- Aufgabe 3 -->
+    <h2>Aufgabe 3</h2>
+    <script type="text/javascript">
+        document.write("<p>navigator.appCodeName: " + navigator.appCodeName + "</p>")
+        document.write("<p>navigator.appName: " + navigator.appName + "</p>")
+        document.write("<p>navigator.appVersion: " + navigator.appVersion + "</p>")
+        document.write("<p>navigator.platform: " + navigator.platform + "</p>")
+        document.write("<p>navigator.cookieEnabled: " + navigator.cookieEnabled + "</p>")
+    </script>
+    <!-- Aufgabe 4 -->
+    <h2>Aufgae 4</h2>
+    <p onmouseover="changeMe(this)" onmouseout="revertMe(this)">Das ist das Original</p>
+    <script type="text/javascript">
+        var originalHTML;
+        var replacementHTML = "Das ist ein Plagiat!";
+
+        function changeMe(node) {
+            if (replacementHTML != node.innerHTML) {
+                originalHTML = node.innerHTML;
+                node.innerHTML = replacementHTML;
+            }
+        }
+
+        function revertMe(node) {
+            node.innerHTML = originalHTML;
+        }
+    </script>
+    <!-- Aufgabe 5 -->
+    <h2>Aufgabe 5</h2>
+    <p id="banner">Diesen Text verschieben!</p>
+    <script>
+        function centerIt() {
+            var banner = document.getElementById('banner')
+            var bannerInfo = banner.getBoundingClientRect();
+
+            console.log('Innere Breite: ' + window.innerWidth);
+            console.log('Objekt Breite: ' + bannerInfo.width);
+            console.log('Innere Höhe: ' + window.innerHeight);
+            console.log('Objekt Höhe: ' + bannerInfo.height);
+
+            var newLeft = (window.innerWidth - bannerInfo.width) / 2;
+            var newTop = (window.innerHeight - bannerInfo.height) / 2;
+            
+            console.log('Left: ' + newLeft + " Top: " + newTop)
+            banner.style.left = newLeft;
+            banner.style.top = newTop; 
+        }
+        centerIt();
+    </script>
+</body>
+
+</html>
