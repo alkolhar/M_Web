@@ -17,7 +17,7 @@
     </script>
 </head>
 
-<body>
+<body onmousemove=moveIt(event)>
     <h2>Aufgabe 1</h2>
     <a href="javascript:alert('Hallo!')">Alert me!</a>
     <br>
@@ -71,19 +71,15 @@
     </script>
     <!-- Aufgabe 6 -->
     <h2>Aufgabe 6</h2>
-    <img src="img/mouseImg.png" id="pic" onmousemove=moveIt()>
+    <img id="pic" src="img/mouseImg.png">
     <script>
-        function moveIt() {
-            if (!ev) {
-                var ev = window.event;
-            }
-            var x = ev.clientX + "px";
-            var y = ev.clientY + "px"
+        function moveIt(event) {
             var imgLoc = document.getElementById('pic');
-            imgLoc.style.top = y;
-            imgLoc.style.left = x;
+            imgLoc.style.top = event.clientY + "px";
+            imgLoc.style.left = event.clientX + "px";
 
-            console.log('x: ' + x + ', y: ' + y)
+            console.log('old x: ' + imgLoc.style.left + ', old y: ' + imgLoc.style.top);
+            console.log('x: ' + event.clientX + ', y: ' + event.clientY)
         }
         
     </script>
