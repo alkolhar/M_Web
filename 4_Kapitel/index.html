@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function onFormReset() {
+            return confirm("Zurück auf Defaultwerte?")
+        }
+        function onFormSubmit() {
+            return confirm("An Server senden?")
+        }
+    </script>
+    <form onreset="return onFormReset()" onsubmit="return onFormSubmit()">
+        <table>
+            <tr>
+                <!-- Linke Spalte: Input-Type, Rechte Spalte: Element -->
+                <td>Date-Picker</td>
+                <td>
+                    <input type=" datetime-local" name="dtLocal" id="dt">
+                </td>
+            </tr>
+            <tr>
+                <td>Buttons</td>
+                <td>
+                    <input type="button" value="Button 1">
+                    <input type="button" value="Button 2">
+                </td>
+            </tr>
+            <tr>
+                <td>Checkbox</td>
+                <td>
+                    <input type="checkbox" name="Checkbox 1" id="chk1" value="Bike">
+                    <label for="chk1">Bike</label><br>
+                    <input type="checkbox" name="Checkbox 2" id="chk2" value="Car">
+                    <label for="chk2">Car</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>File Upload</td>
+                <td>
+                    <input type="file" name="fileUpload" id="fileUpload">
+                </td>
+            </tr>
+            <tr>
+                <td>Hidden-Feld</td>
+                <td>
+                    <input type="hidden" name="hiddenInput">
+                </td>
+            </tr>
+            <tr>
+                <td>Passwort-Feld</td>
+                <td>
+                    <input type="password" name="pwd" id="inpwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Radiobutton</td>
+                <td>
+                    <input type="radio" name="Radio 1" id="r1">
+                    <label for="r1">Auswahl 1</label><br>
+                    <input type="radio" name="Radio 2" id="r2">
+                    <label for="r2">Auswahl 2</label><br>
+                    <input type="radio" name="Radio 3" id="r3">
+                    <label for="r3">Auswahl 3</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Reset & Submit Button</td>
+                <td>
+                    <input type="reset">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
