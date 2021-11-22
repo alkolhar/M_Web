@@ -1,0 +1,16 @@
+Address Book In PHP
+
+**LOGIN DETAILS**
+
+Username : harry
+Password : pass
+
+**Developed By Suraj Mundalik**
+
+DON'T FORGET TO CREATE A DATABASE NAMING "address-book" AND IMPORT THE SQL FILE.
+WITHOUT THE DATABASE THE PROJECT WON'T RUN.
+
+>>THE DATABASE FILE IS INSIDE "DATABASE" FOLDER!!
+
+***** FOR MORE PROJECTS :- https://projectnotes.org/ *****
+
