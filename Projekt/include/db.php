@@ -6,4 +6,3 @@
 	else{
 		mysqli_select_db($con, "address-book");
 	}
-?>
