@@ -1,0 +1,15 @@
+.tabbutton-dele {
+  background: none;
+  border: none;
+  color: black;
+}
+.tabbutton-edit {
+  background: none;
+  border: none;
+  color: black;
+}
+
+.formBtn {
+  float: left;
+  width: 50%;
+}
