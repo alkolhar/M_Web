@@ -40,5 +40,5 @@ _Note that the password has to be hashed via php's password hashing function._
 7. Open a Browser and navigate to `localhost/address-book`
 
 ## Images
-![Login Screen](/screenshots/addressbook_login.png)
+![Login Screen](/screenshots/login.png)
 ![Main Screen](/screenshots/addressbook.png)
